@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #ececec;
+}
+
+
+.todo__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 700px;
+  background-color: #f4f4f4;
+  margin: auto;
+  margin-top: 20px;
+  font-family: "Archivo", sans-serif;
+}
+.todo__title {
+  font-size: 10px;
+  width: 100%;
+  padding: 1em;
+  border-bottom: 1px solid #bbbbbb;
+}
+.todo__headline h2 {
+  font-size: 14px;
+}
+.todo__section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  border-bottom: 1px solid #bbbbbb;
+}
+.todo__icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.todo__icons span {
+  padding: 1em;
+  border: 1px solid #929292;
+}
+.todo__icons span:first-child {
+  background-color: red;
+  color: white;
+}
+.todo__headline {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0.25em;
+}
+.todo__description {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0.25em;
+}
+.todo__date {
+  font-size: 14px;
+  padding: 0.25em;
+  color: red;
+}
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.form__input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 1em;
+}
+.form__input:nth-child(1) {
+  border-bottom: 1px solid #eeeeee;
+}
+.form__input::placeholder {
+  font-family: "Archivo", sans-serif;
+  color: #818181;
+}
+.button__wrapper {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 1em;
+}
+.button__wrapper button {
+  border-radius: 5px;
+  border: 1px solid #dfdfdf;
+  background-color: transparent;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: 250ms;
+  color: #818181;
+}
+.form__button:nth-child(1) {
+  background-color: rgb(111, 101, 197);
+  color: #fff;
+}
+.form__button:nth-child(1):hover {
+  background-color: rgb(89, 81, 163);
+  color: #fff;
+}
+
+.active {
+  color: #000 !important;
+}
