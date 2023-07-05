@@ -19,7 +19,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 700px;
+  width: 85%;
   background-color: #f4f4f4;
   margin: auto;
   margin-top: 20px;
@@ -116,4 +116,11 @@ body {
 
 .active {
   color: #000 !important;
+}
+
+
+@media (max-width: 768px) {
+  .todo__box {
+    width: 100%;
+  }
 }
